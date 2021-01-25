@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="검사유형">
+    <Key>
+      <PropertyRef Name="검사유현번호" />
+    </Key>
+    <Property Name="검사유현번호" Type="Int32" Nullable="false" />
+    <Property Name="검사명" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="생산검사" Relationship="Self.FK_생산검사_검사유형" FromRole="검사유형" ToRole="생산검사" />
+  </EntityType>
+  <EntityType Name="공급업체">
+    <Key>
+      <PropertyRef Name="공급업체번호" />
+    </Key>
+    <Property Name="공급업체번호" Type="Int32" Nullable="false" />
+    <Property Name="공급업체명" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="반품처리서" Relationship="Self.FK_반품처리서_공급업체" FromRole="공급업체" ToRole="반품처리서" />
+    <NavigationProperty Name="발주서" Relationship="Self.FK_발주서_공급업체" FromRole="공급업체" ToRole="발주서" />
+    <NavigationProperty Name="발주확인서" Relationship="Self.FK_발주확인서_공급업체" FromRole="공급업체" ToRole="발주확인서" />
+  </EntityType>
+  <EntityType Name="공정">
+    <Key>
+      <PropertyRef Name="공정번호" />
+    </Key>
+    <Property Name="공정번호" Type="Int32" Nullable="false" />
+    <Property Name="공정명" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="공정시간" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="공정순서" Relationship="Self.FK_공정순서_공정" FromRole="공정" ToRole="공정순서" />
+  </EntityType>
+  <EntityType Name="공정순서">
+    <Key>
+      <PropertyRef Name="공정번호" />
+      <PropertyRef Name="제품번호" />
+    </Key>
+    <Property Name="공정번호" Type="Int32" Nullable="false" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="후공정번호" Type="Int32" />
+    <Property Name="최초공정번호" Type="Int32" />
+    <NavigationProperty Name="공정" Relationship="Self.FK_공정순서_공정" FromRole="공정순서" ToRole="공정" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_공정순서_제품" FromRole="공정순서" ToRole="제품" />
+  </EntityType>
+  <EntityType Name="반품처리서">
+    <Key>
+      <PropertyRef Name="반품처리서번호" />
+    </Key>
+    <Property Name="반품처리서번호" Type="Int32" Nullable="false" />
+    <Property Name="공급업체번호" Type="Int32" Nullable="false" />
+    <Property Name="입고검사서번호" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="공급업체" Relationship="Self.FK_반품처리서_공급업체" FromRole="반품처리서" ToRole="공급업체" />
+    <NavigationProperty Name="입고검사" Relationship="Self.FK_반품처리서_입고검사서" FromRole="반품처리서" ToRole="입고검사" />
+  </EntityType>
+  <EntityType Name="발주리스트">
+    <Key>
+      <PropertyRef Name="자재번호" />
+      <PropertyRef Name="발주번호" />
+    </Key>
+    <Property Name="자재번호" Type="Int32" Nullable="false" />
+    <Property Name="발주번호" Type="Int32" Nullable="false" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="발주서" Relationship="Self.FK_발주리스트_발주서" FromRole="발주리스트" ToRole="발주서" />
+    <NavigationProperty Name="자재" Relationship="Self.FK_발주리스트_자재" FromRole="발주리스트" ToRole="자재" />
+  </EntityType>
+  <EntityType Name="발주서">
+    <Key>
+      <PropertyRef Name="발주번호" />
+    </Key>
+    <Property Name="발주번호" Type="Int32" Nullable="false" />
+    <Property Name="공급업체번호" Type="Int32" />
+    <Property Name="주문날짜" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="납기일" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="공급업체" Relationship="Self.FK_발주서_공급업체" FromRole="발주서" ToRole="공급업체" />
+    <NavigationProperty Name="발주리스트" Relationship="Self.FK_발주리스트_발주서" FromRole="발주서" ToRole="발주리스트" />
+  </EntityType>
+  <EntityType Name="발주확인리스트">
+    <Key>
+      <PropertyRef Name="발주확인서번호" />
+      <PropertyRef Name="자재번호" />
+    </Key>
+    <Property Name="발주확인서번호" Type="Int32" Nullable="false" />
+    <Property Name="자재번호" Type="Int32" Nullable="false" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="발주확인서" Relationship="Self.FK_발주확인리스트_발주확인서" FromRole="발주확인리스트" ToRole="발주확인서" />
+    <NavigationProperty Name="자재" Relationship="Self.FK_발주확인리스트_자재1" FromRole="발주확인리스트" ToRole="자재" />
+    <NavigationProperty Name="자재전표" Relationship="Self.FK_발주확인리스트_자재전표" FromRole="발주확인리스트" ToRole="자재전표" />
+    <NavigationProperty Name="입고검사" Relationship="Self.FK_입고검사서_발주확인리스트" FromRole="발주확인리스트" ToRole="입고검사" />
+  </EntityType>
+  <EntityType Name="발주확인서">
+    <Key>
+      <PropertyRef Name="발주확인서번호" />
+    </Key>
+    <Property Name="발주확인서번호" Type="Int32" Nullable="false" />
+    <Property Name="공급업체번호" Type="Int32" Nullable="false" />
+    <Property Name="배송날짜" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="공급업체" Relationship="Self.FK_발주확인서_공급업체" FromRole="발주확인서" ToRole="공급업체" />
+    <NavigationProperty Name="발주확인리스트" Relationship="Self.FK_발주확인리스트_발주확인서" FromRole="발주확인서" ToRole="발주확인리스트" />
+  </EntityType>
+  <EntityType Name="불량상세정보">
+    <Key>
+      <PropertyRef Name="불량코드번호" />
+      <PropertyRef Name="검사번호" />
+    </Key>
+    <Property Name="불량코드번호" Type="Int32" Nullable="false" />
+    <Property Name="검사번호" Type="Int32" Nullable="false" />
+    <Property Name="불량수량" Type="Int32" />
+    <NavigationProperty Name="불량코드내역" Relationship="Self.FK_불량상세정보_불량코드내역" FromRole="불량상세정보" ToRole="불량코드내역" />
+    <NavigationProperty Name="생산검사" Relationship="Self.FK_불량상세정보_생산검사" FromRole="불량상세정보" ToRole="생산검사" />
+    <NavigationProperty Name="입고검사" Relationship="Self.FK_불량상세정보_입고검사서" FromRole="불량상세정보" ToRole="입고검사" />
+  </EntityType>
+  <EntityType Name="불량코드내역">
+    <Key>
+      <PropertyRef Name="불량코드번호" />
+    </Key>
+    <Property Name="불량코드번호" Type="Int32" Nullable="false" />
+    <Property Name="불량명" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="불량상세정보" Relationship="Self.FK_불량상세정보_불량코드내역" FromRole="불량코드내역" ToRole="불량상세정보" />
+  </EntityType>
+  <EntityType Name="생산검사">
+    <Key>
+      <PropertyRef Name="생산검사번호" />
+    </Key>
+    <Property Name="생산검사번호" Type="Int32" Nullable="false" />
+    <Property Name="생산실적번호" Type="Int32" Nullable="false" />
+    <Property Name="검사유형번호" Type="Int32" Nullable="false" />
+    <Property Name="양품수량" Type="Int32" Nullable="false" />
+    <Property Name="불량수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="검사유형" Relationship="Self.FK_생산검사_검사유형" FromRole="생산검사" ToRole="검사유형" />
+    <NavigationProperty Name="불량상세정보" Relationship="Self.FK_불량상세정보_생산검사" FromRole="생산검사" ToRole="불량상세정보" />
+    <NavigationProperty Name="생산실적현황" Relationship="Self.FK_생산검사_생산실적현황" FromRole="생산검사" ToRole="생산실적현황" />
+  </EntityType>
+  <EntityType Name="생산계획현황">
+    <Key>
+      <PropertyRef Name="생산계획현황번호" />
+      <PropertyRef Name="제품번호" />
+    </Key>
+    <Property Name="생산계획현황번호" Type="Int32" Nullable="false" />
+    <Property Name="작업예정일" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="작업확정일" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="수량" Type="Int32" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_생산계획현황_제품" FromRole="생산계획현황" ToRole="제품" />
+    <NavigationProperty Name="작업지시현황" Relationship="Self.FK_작업지시현황_생산계획현황" FromRole="생산계획현황" ToRole="작업지시현황" />
+  </EntityType>
+  <EntityType Name="생산실적현황">
+    <Key>
+      <PropertyRef Name="생산실적번호" />
+    </Key>
+    <Property Name="생산실적번호" Type="Int32" Nullable="false" />
+    <Property Name="작업지시번호" Type="Int32" Nullable="false" />
+    <Property Name="실적일" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="실적수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="생산검사" Relationship="Self.FK_생산검사_생산실적현황" FromRole="생산실적현황" ToRole="생산검사" />
+    <NavigationProperty Name="작업지시현황" Relationship="Self.FK_생산실적현황_작업지시현황" FromRole="생산실적현황" ToRole="작업지시현황" />
+  </EntityType>
+  <EntityType Name="입고검사">
+    <Key>
+      <PropertyRef Name="입고검사번호" />
+    </Key>
+    <Property Name="입고검사번호" Type="Int32" Nullable="false" />
+    <Property Name="발주확인서번호" Type="Int32" Nullable="false" />
+    <Property Name="자재번호" Type="Int32" Nullable="false" />
+    <Property Name="양품수량" Type="Int32" Nullable="false" />
+    <Property Name="불량수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="반품처리서" Relationship="Self.FK_반품처리서_입고검사서" FromRole="입고검사" ToRole="반품처리서" />
+    <NavigationProperty Name="발주확인리스트" Relationship="Self.FK_입고검사서_발주확인리스트" FromRole="입고검사" ToRole="발주확인리스트" />
+    <NavigationProperty Name="불량상세정보" Relationship="Self.FK_불량상세정보_입고검사서" FromRole="입고검사" ToRole="불량상세정보" />
+  </EntityType>
+  <EntityType Name="자재">
+    <Key>
+      <PropertyRef Name="자재번호" />
+    </Key>
+    <Property Name="자재번호" Type="Int32" Nullable="false" />
+    <Property Name="자재명" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="안전재교량" Type="Int32" Nullable="false" />
+    <Property Name="재고량" Type="Int32" Nullable="false" />
+    <Property Name="구매단가" Type="Int32" Nullable="false" />
+    <Property Name="리드타임" Type="Int32" />
+    <NavigationProperty Name="발주리스트" Relationship="Self.FK_발주리스트_자재" FromRole="자재" ToRole="발주리스트" />
+    <NavigationProperty Name="발주확인리스트" Relationship="Self.FK_발주확인리스트_자재1" FromRole="자재" ToRole="발주확인리스트" />
+    <NavigationProperty Name="자재명세서" Relationship="Self.FK_자재명세서_자재1" FromRole="자재" ToRole="자재명세서" />
+  </EntityType>
+  <EntityType Name="자재명세서">
+    <Key>
+      <PropertyRef Name="제품번호" />
+      <PropertyRef Name="자재번호" />
+    </Key>
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="자재번호" Type="Int32" Nullable="false" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="자재" Relationship="Self.FK_자재명세서_자재1" FromRole="자재명세서" ToRole="자재" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_자재명세서_제품" FromRole="자재명세서" ToRole="제품" />
+  </EntityType>
+  <EntityType Name="자재전표">
+    <Key>
+      <PropertyRef Name="자재전표번호" />
+    </Key>
+    <Property Name="자재전표번호" Type="Int32" Nullable="false" />
+    <Property Name="발주확인서번호" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="발주확인리스트" Relationship="Self.FK_발주확인리스트_자재전표" FromRole="자재전표" ToRole="발주확인리스트" />
+  </EntityType>
+  <EntityType Name="작업완료지시">
+    <Key>
+      <PropertyRef Name="작업완료지시번호" />
+    </Key>
+    <Property Name="작업완료지시번호" Type="Int32" Nullable="false" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="작업완료일" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <Property Name="생산실적검사여부" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_작업완료지시_제품" FromRole="작업완료지시" ToRole="제품" />
+  </EntityType>
+  <EntityType Name="작업완료확인서">
+    <Key>
+      <PropertyRef Name="작업완료지시번호" />
+    </Key>
+    <Property Name="작업완료지시번호" Type="Int32" Nullable="false" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="작업완료일" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <Property Name="생산실적검사여부" Type="Int32" Nullable="false" />
+    <Property Name="입고여부" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_작업완료확인서_제품" FromRole="작업완료확인서" ToRole="제품" />
+  </EntityType>
+  <EntityType Name="작업지시">
+    <Key>
+      <PropertyRef Name="작업지시번호" />
+    </Key>
+    <Property Name="작업지시번호" Type="Int32" Nullable="false" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <Property Name="작업지시일" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="작업완료일" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_작업지시_제품" FromRole="작업지시" ToRole="제품" />
+    <NavigationProperty Name="작업지시리스트" Relationship="Self.FK_작업지시리스트_작업지시" FromRole="작업지시" ToRole="작업지시리스트" />
+  </EntityType>
+  <EntityType Name="작업지시리스트">
+    <Key>
+      <PropertyRef Name="작업지시번호" />
+      <PropertyRef Name="제품번호" />
+    </Key>
+    <Property Name="작업지시번호" Type="Int32" Nullable="false" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="수량" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="작업지시" Relationship="Self.FK_작업지시리스트_작업지시" FromRole="작업지시리스트" ToRole="작업지시" />
+    <NavigationProperty Name="제품" Relationship="Self.FK_작업지시리스트_제품" FromRole="작업지시리스트" ToRole="제품" />
+  </EntityType>
+  <EntityType Name="작업지시현황">
+    <Key>
+      <PropertyRef Name="작업지시번호" />
+    </Key>
+    <Property Name="작업지시번호" Type="Int32" Nullable="false" />
+    <Property Name="생산계획현황번호" Type="Int32" Nullable="false" />
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="수량" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="작업장번호" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="작업상태번호" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="작업지시일" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="작업완료_예정_일" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="자재명세번호" Type="Int32" Nullable="false" />
+    <Property Name="상태" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="생산계획현황" Relationship="Self.FK_작업지시현황_생산계획현황" FromRole="작업지시현황" ToRole="생산계획현황" />
+    <NavigationProperty Name="생산실적현황" Relationship="Self.FK_생산실적현황_작업지시현황" FromRole="작업지시현황" ToRole="생산실적현황" />
+  </EntityType>
+  <EntityType Name="제품">
+    <Key>
+      <PropertyRef Name="제품번호" />
+    </Key>
+    <Property Name="제품번호" Type="Int32" Nullable="false" />
+    <Property Name="제품명" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="안전재고량" Type="Int32" />
+    <Property Name="재고량" Type="Int32" />
+    <Property Name="품목군" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="검사여부" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="일별생산량" Type="Int32" />
+    <Property Name="표준원가" Type="Int32" />
+    <Property Name="실제원가" Type="Int32" />
+    <Property Name="외경" Type="Int32" />
+    <Property Name="층" Type="Int32" />
+    <Property Name="리드타임" Type="Int32" />
+    <Property Name="LOT수량" Type="Int32" />
+    <NavigationProperty Name="공정순서" Relationship="Self.FK_공정순서_제품" FromRole="제품" ToRole="공정순서" />
+    <NavigationProperty Name="생산계획현황" Relationship="Self.FK_생산계획현황_제품" FromRole="제품" ToRole="생산계획현황" />
+    <NavigationProperty Name="자재명세서" Relationship="Self.FK_자재명세서_제품" FromRole="제품" ToRole="자재명세서" />
+    <NavigationProperty Name="작업완료지시" Relationship="Self.FK_작업완료지시_제품" FromRole="제품" ToRole="작업완료지시" />
+    <NavigationProperty Name="작업완료확인서" Relationship="Self.FK_작업완료확인서_제품" FromRole="제품" ToRole="작업완료확인서" />
+    <NavigationProperty Name="작업지시" Relationship="Self.FK_작업지시_제품" FromRole="제품" ToRole="작업지시" />
+    <NavigationProperty Name="작업지시리스트" Relationship="Self.FK_작업지시리스트_제품" FromRole="제품" ToRole="작업지시리스트" />
+  </EntityType>
+  <EntityType Name="투입현황1">
+    <Key>
+      <PropertyRef Name="관리번호" />
+    </Key>
+    <Property Name="관리번호" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="품목번호" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="자재불출" Type="Boolean" Nullable="false" />
+    <Property Name="투입수량" Type="Int32" Nullable="false" />
+    <Property Name="투입일" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="품목정보">
+    <Key>
+      <PropertyRef Name="품목번호" />
+    </Key>
+    <Property Name="품목번호" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="전공정" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="후공정" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="외경" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="색상" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="층" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="최종공정" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_생산검사_검사유형">
+    <End Role="검사유형" Type="Self.검사유형" Multiplicity="1" />
+    <End Role="생산검사" Type="Self.생산검사" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="검사유형">
+        <PropertyRef Name="검사유현번호" />
+      </Principal>
+      <Dependent Role="생산검사">
+        <PropertyRef Name="검사유형번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_반품처리서_공급업체">
+    <End Role="공급업체" Type="Self.공급업체" Multiplicity="1" />
+    <End Role="반품처리서" Type="Self.반품처리서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="공급업체">
+        <PropertyRef Name="공급업체번호" />
+      </Principal>
+      <Dependent Role="반품처리서">
+        <PropertyRef Name="공급업체번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주서_공급업체">
+    <End Role="공급업체" Type="Self.공급업체" Multiplicity="0..1" />
+    <End Role="발주서" Type="Self.발주서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="공급업체">
+        <PropertyRef Name="공급업체번호" />
+      </Principal>
+      <Dependent Role="발주서">
+        <PropertyRef Name="공급업체번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주확인서_공급업체">
+    <End Role="공급업체" Type="Self.공급업체" Multiplicity="1" />
+    <End Role="발주확인서" Type="Self.발주확인서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="공급업체">
+        <PropertyRef Name="공급업체번호" />
+      </Principal>
+      <Dependent Role="발주확인서">
+        <PropertyRef Name="공급업체번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_공정순서_공정">
+    <End Role="공정" Type="Self.공정" Multiplicity="1" />
+    <End Role="공정순서" Type="Self.공정순서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="공정">
+        <PropertyRef Name="공정번호" />
+      </Principal>
+      <Dependent Role="공정순서">
+        <PropertyRef Name="공정번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_공정순서_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="공정순서" Type="Self.공정순서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="공정순서">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_반품처리서_입고검사서">
+    <End Role="입고검사" Type="Self.입고검사" Multiplicity="1" />
+    <End Role="반품처리서" Type="Self.반품처리서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="입고검사">
+        <PropertyRef Name="입고검사번호" />
+      </Principal>
+      <Dependent Role="반품처리서">
+        <PropertyRef Name="입고검사서번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주리스트_발주서">
+    <End Role="발주서" Type="Self.발주서" Multiplicity="1" />
+    <End Role="발주리스트" Type="Self.발주리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="발주서">
+        <PropertyRef Name="발주번호" />
+      </Principal>
+      <Dependent Role="발주리스트">
+        <PropertyRef Name="발주번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주리스트_자재">
+    <End Role="자재" Type="Self.자재" Multiplicity="1" />
+    <End Role="발주리스트" Type="Self.발주리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="자재">
+        <PropertyRef Name="자재번호" />
+      </Principal>
+      <Dependent Role="발주리스트">
+        <PropertyRef Name="자재번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주확인리스트_발주확인서">
+    <End Role="발주확인서" Type="Self.발주확인서" Multiplicity="1" />
+    <End Role="발주확인리스트" Type="Self.발주확인리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="발주확인서">
+        <PropertyRef Name="발주확인서번호" />
+      </Principal>
+      <Dependent Role="발주확인리스트">
+        <PropertyRef Name="발주확인서번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주확인리스트_자재1">
+    <End Role="자재" Type="Self.자재" Multiplicity="1" />
+    <End Role="발주확인리스트" Type="Self.발주확인리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="자재">
+        <PropertyRef Name="자재번호" />
+      </Principal>
+      <Dependent Role="발주확인리스트">
+        <PropertyRef Name="자재번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_발주확인리스트_자재전표">
+    <End Role="자재전표" Type="Self.자재전표" Multiplicity="1" />
+    <End Role="발주확인리스트" Type="Self.발주확인리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="자재전표">
+        <PropertyRef Name="자재전표번호" />
+      </Principal>
+      <Dependent Role="발주확인리스트">
+        <PropertyRef Name="발주확인서번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_입고검사서_발주확인리스트">
+    <End Role="발주확인리스트" Type="Self.발주확인리스트" Multiplicity="1" />
+    <End Role="입고검사" Type="Self.입고검사" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="발주확인리스트">
+        <PropertyRef Name="발주확인서번호" />
+        <PropertyRef Name="자재번호" />
+      </Principal>
+      <Dependent Role="입고검사">
+        <PropertyRef Name="발주확인서번호" />
+        <PropertyRef Name="자재번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_불량상세정보_불량코드내역">
+    <End Role="불량코드내역" Type="Self.불량코드내역" Multiplicity="1" />
+    <End Role="불량상세정보" Type="Self.불량상세정보" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="불량코드내역">
+        <PropertyRef Name="불량코드번호" />
+      </Principal>
+      <Dependent Role="불량상세정보">
+        <PropertyRef Name="불량코드번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_불량상세정보_생산검사">
+    <End Role="생산검사" Type="Self.생산검사" Multiplicity="1" />
+    <End Role="불량상세정보" Type="Self.불량상세정보" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="생산검사">
+        <PropertyRef Name="생산검사번호" />
+      </Principal>
+      <Dependent Role="불량상세정보">
+        <PropertyRef Name="검사번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_불량상세정보_입고검사서">
+    <End Role="입고검사" Type="Self.입고검사" Multiplicity="1" />
+    <End Role="불량상세정보" Type="Self.불량상세정보" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="입고검사">
+        <PropertyRef Name="입고검사번호" />
+      </Principal>
+      <Dependent Role="불량상세정보">
+        <PropertyRef Name="검사번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_생산검사_생산실적현황">
+    <End Role="생산실적현황" Type="Self.생산실적현황" Multiplicity="1" />
+    <End Role="생산검사" Type="Self.생산검사" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="생산실적현황">
+        <PropertyRef Name="생산실적번호" />
+      </Principal>
+      <Dependent Role="생산검사">
+        <PropertyRef Name="생산실적번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_생산계획현황_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="생산계획현황" Type="Self.생산계획현황" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="생산계획현황">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_작업지시현황_생산계획현황">
+    <End Role="생산계획현황" Type="Self.생산계획현황" Multiplicity="1" />
+    <End Role="작업지시현황" Type="Self.작업지시현황" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="생산계획현황">
+        <PropertyRef Name="생산계획현황번호" />
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="작업지시현황">
+        <PropertyRef Name="생산계획현황번호" />
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_생산실적현황_작업지시현황">
+    <End Role="작업지시현황" Type="Self.작업지시현황" Multiplicity="1" />
+    <End Role="생산실적현황" Type="Self.생산실적현황" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="작업지시현황">
+        <PropertyRef Name="작업지시번호" />
+      </Principal>
+      <Dependent Role="생산실적현황">
+        <PropertyRef Name="작업지시번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_자재명세서_자재1">
+    <End Role="자재" Type="Self.자재" Multiplicity="1" />
+    <End Role="자재명세서" Type="Self.자재명세서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="자재">
+        <PropertyRef Name="자재번호" />
+      </Principal>
+      <Dependent Role="자재명세서">
+        <PropertyRef Name="자재번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_자재명세서_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="자재명세서" Type="Self.자재명세서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="자재명세서">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_작업완료지시_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="작업완료지시" Type="Self.작업완료지시" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="작업완료지시">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_작업완료확인서_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="작업완료확인서" Type="Self.작업완료확인서" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="작업완료확인서">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_작업지시_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="작업지시" Type="Self.작업지시" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="작업지시">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_작업지시리스트_작업지시">
+    <End Role="작업지시" Type="Self.작업지시" Multiplicity="1" />
+    <End Role="작업지시리스트" Type="Self.작업지시리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="작업지시">
+        <PropertyRef Name="작업지시번호" />
+      </Principal>
+      <Dependent Role="작업지시리스트">
+        <PropertyRef Name="작업지시번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_작업지시리스트_제품">
+    <End Role="제품" Type="Self.제품" Multiplicity="1" />
+    <End Role="작업지시리스트" Type="Self.작업지시리스트" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="제품">
+        <PropertyRef Name="제품번호" />
+      </Principal>
+      <Dependent Role="작업지시리스트">
+        <PropertyRef Name="제품번호" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ERPEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="검사유형" EntityType="Self.검사유형" />
+    <EntitySet Name="공급업체" EntityType="Self.공급업체" />
+    <EntitySet Name="공정" EntityType="Self.공정" />
+    <EntitySet Name="공정순서" EntityType="Self.공정순서" />
+    <EntitySet Name="반품처리서" EntityType="Self.반품처리서" />
+    <EntitySet Name="발주리스트" EntityType="Self.발주리스트" />
+    <EntitySet Name="발주서" EntityType="Self.발주서" />
+    <EntitySet Name="발주확인리스트" EntityType="Self.발주확인리스트" />
+    <EntitySet Name="발주확인서" EntityType="Self.발주확인서" />
+    <EntitySet Name="불량상세정보" EntityType="Self.불량상세정보" />
+    <EntitySet Name="불량코드내역" EntityType="Self.불량코드내역" />
+    <EntitySet Name="생산검사" EntityType="Self.생산검사" />
+    <EntitySet Name="생산계획현황" EntityType="Self.생산계획현황" />
+    <EntitySet Name="생산실적현황" EntityType="Self.생산실적현황" />
+    <EntitySet Name="입고검사" EntityType="Self.입고검사" />
+    <EntitySet Name="자재" EntityType="Self.자재" />
+    <EntitySet Name="자재명세서" EntityType="Self.자재명세서" />
+    <EntitySet Name="자재전표" EntityType="Self.자재전표" />
+    <EntitySet Name="작업완료지시" EntityType="Self.작업완료지시" />
+    <EntitySet Name="작업완료확인서" EntityType="Self.작업완료확인서" />
+    <EntitySet Name="작업지시" EntityType="Self.작업지시" />
+    <EntitySet Name="작업지시리스트" EntityType="Self.작업지시리스트" />
+    <EntitySet Name="작업지시현황" EntityType="Self.작업지시현황" />
+    <EntitySet Name="제품" EntityType="Self.제품" />
+    <EntitySet Name="투입현황1" EntityType="Self.투입현황1" />
+    <EntitySet Name="품목정보" EntityType="Self.품목정보" />
+    <AssociationSet Name="FK_생산검사_검사유형" Association="Self.FK_생산검사_검사유형">
+      <End Role="검사유형" EntitySet="검사유형" />
+      <End Role="생산검사" EntitySet="생산검사" />
+    </AssociationSet>
+    <AssociationSet Name="FK_반품처리서_공급업체" Association="Self.FK_반품처리서_공급업체">
+      <End Role="공급업체" EntitySet="공급업체" />
+      <End Role="반품처리서" EntitySet="반품처리서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주서_공급업체" Association="Self.FK_발주서_공급업체">
+      <End Role="공급업체" EntitySet="공급업체" />
+      <End Role="발주서" EntitySet="발주서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주확인서_공급업체" Association="Self.FK_발주확인서_공급업체">
+      <End Role="공급업체" EntitySet="공급업체" />
+      <End Role="발주확인서" EntitySet="발주확인서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_공정순서_공정" Association="Self.FK_공정순서_공정">
+      <End Role="공정" EntitySet="공정" />
+      <End Role="공정순서" EntitySet="공정순서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_공정순서_제품" Association="Self.FK_공정순서_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="공정순서" EntitySet="공정순서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_반품처리서_입고검사서" Association="Self.FK_반품처리서_입고검사서">
+      <End Role="입고검사" EntitySet="입고검사" />
+      <End Role="반품처리서" EntitySet="반품처리서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주리스트_발주서" Association="Self.FK_발주리스트_발주서">
+      <End Role="발주서" EntitySet="발주서" />
+      <End Role="발주리스트" EntitySet="발주리스트" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주리스트_자재" Association="Self.FK_발주리스트_자재">
+      <End Role="자재" EntitySet="자재" />
+      <End Role="발주리스트" EntitySet="발주리스트" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주확인리스트_발주확인서" Association="Self.FK_발주확인리스트_발주확인서">
+      <End Role="발주확인서" EntitySet="발주확인서" />
+      <End Role="발주확인리스트" EntitySet="발주확인리스트" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주확인리스트_자재1" Association="Self.FK_발주확인리스트_자재1">
+      <End Role="자재" EntitySet="자재" />
+      <End Role="발주확인리스트" EntitySet="발주확인리스트" />
+    </AssociationSet>
+    <AssociationSet Name="FK_발주확인리스트_자재전표" Association="Self.FK_발주확인리스트_자재전표">
+      <End Role="자재전표" EntitySet="자재전표" />
+      <End Role="발주확인리스트" EntitySet="발주확인리스트" />
+    </AssociationSet>
+    <AssociationSet Name="FK_입고검사서_발주확인리스트" Association="Self.FK_입고검사서_발주확인리스트">
+      <End Role="발주확인리스트" EntitySet="발주확인리스트" />
+      <End Role="입고검사" EntitySet="입고검사" />
+    </AssociationSet>
+    <AssociationSet Name="FK_불량상세정보_불량코드내역" Association="Self.FK_불량상세정보_불량코드내역">
+      <End Role="불량코드내역" EntitySet="불량코드내역" />
+      <End Role="불량상세정보" EntitySet="불량상세정보" />
+    </AssociationSet>
+    <AssociationSet Name="FK_불량상세정보_생산검사" Association="Self.FK_불량상세정보_생산검사">
+      <End Role="생산검사" EntitySet="생산검사" />
+      <End Role="불량상세정보" EntitySet="불량상세정보" />
+    </AssociationSet>
+    <AssociationSet Name="FK_불량상세정보_입고검사서" Association="Self.FK_불량상세정보_입고검사서">
+      <End Role="입고검사" EntitySet="입고검사" />
+      <End Role="불량상세정보" EntitySet="불량상세정보" />
+    </AssociationSet>
+    <AssociationSet Name="FK_생산검사_생산실적현황" Association="Self.FK_생산검사_생산실적현황">
+      <End Role="생산실적현황" EntitySet="생산실적현황" />
+      <End Role="생산검사" EntitySet="생산검사" />
+    </AssociationSet>
+    <AssociationSet Name="FK_생산계획현황_제품" Association="Self.FK_생산계획현황_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="생산계획현황" EntitySet="생산계획현황" />
+    </AssociationSet>
+    <AssociationSet Name="FK_작업지시현황_생산계획현황" Association="Self.FK_작업지시현황_생산계획현황">
+      <End Role="생산계획현황" EntitySet="생산계획현황" />
+      <End Role="작업지시현황" EntitySet="작업지시현황" />
+    </AssociationSet>
+    <AssociationSet Name="FK_생산실적현황_작업지시현황" Association="Self.FK_생산실적현황_작업지시현황">
+      <End Role="작업지시현황" EntitySet="작업지시현황" />
+      <End Role="생산실적현황" EntitySet="생산실적현황" />
+    </AssociationSet>
+    <AssociationSet Name="FK_자재명세서_자재1" Association="Self.FK_자재명세서_자재1">
+      <End Role="자재" EntitySet="자재" />
+      <End Role="자재명세서" EntitySet="자재명세서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_자재명세서_제품" Association="Self.FK_자재명세서_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="자재명세서" EntitySet="자재명세서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_작업완료지시_제품" Association="Self.FK_작업완료지시_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="작업완료지시" EntitySet="작업완료지시" />
+    </AssociationSet>
+    <AssociationSet Name="FK_작업완료확인서_제품" Association="Self.FK_작업완료확인서_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="작업완료확인서" EntitySet="작업완료확인서" />
+    </AssociationSet>
+    <AssociationSet Name="FK_작업지시_제품" Association="Self.FK_작업지시_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="작업지시" EntitySet="작업지시" />
+    </AssociationSet>
+    <AssociationSet Name="FK_작업지시리스트_작업지시" Association="Self.FK_작업지시리스트_작업지시">
+      <End Role="작업지시" EntitySet="작업지시" />
+      <End Role="작업지시리스트" EntitySet="작업지시리스트" />
+    </AssociationSet>
+    <AssociationSet Name="FK_작업지시리스트_제품" Association="Self.FK_작업지시리스트_제품">
+      <End Role="제품" EntitySet="제품" />
+      <End Role="작업지시리스트" EntitySet="작업지시리스트" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,271 @@
+C:\Users\301-10\source\repos\MES\MES\bin\Debug\MES.exe.config
+C:\Users\301-10\source\repos\MES\MES\bin\Debug\MES.exe
+C:\Users\301-10\source\repos\MES\MES\bin\Debug\MES.pdb
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.exe
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.pdb
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.WorkSelectGrid.resources
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.TopSelect.resources
+C:\Users\301-10\source\repos\MES\MES\obj\Debug\MES.BottomSelect.resources
+C:\Users\301-11\Desktop\MES\MES\MES\bin\Debug\MES.exe.config
+C:\Users\301-11\Desktop\MES\MES\MES\bin\Debug\MES.exe
+C:\Users\301-11\Desktop\MES\MES\MES\bin\Debug\MES.pdb
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.BottomSelect.resources
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.TopSelect.resources
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.WorkSelectGrid.resources
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.WorkStatusGrid.resources
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.exe
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.pdb
+C:\Users\301-11\Desktop\MES\MES\MES\obj\Debug\MES.ProductPerformanceGrid.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.BottomSelect.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.detailperform.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.TopSelect.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.exe
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.pdb
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\bin\Debug\MES.exe.config
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\bin\Debug\MES.exe
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\bin\Debug\MES.pdb
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.exe.config
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.exe
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.pdb
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.BottomSelect.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.detailperform.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.TopSelect.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.exe
+C:\Users\301-10\Desktop\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.pdb
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.exe.config
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.exe
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.pdb
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MetroFramework.dll
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.BottomSelect.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.detailperform.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.exe
+C:\Users\301-05\Documents\7.26\7.25\7.25 0446 MES\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.pdb
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.exe.config
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.exe
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\bin\Debug\MES.pdb
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\bin\Debug\MetroFramework.dll
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.detailperform.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.MainForm.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.Notice.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.exe
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.pdb
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\1\Documents\MES\MES_CompleteProtoDesign\MES\obj\Debug\MES.BottomButton.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\MES.exe.config
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\MES.exe
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\MES.pdb
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\EntityFramework.dll
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\MetroFramework.dll
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\EntityFramework.xml
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\bin\Debug\ko\EntityFramework.resources.dll
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.Detailperform.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.exe
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.pdb
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.MakeButtonForm.resources
+C:\Users\301-05\Documents\카카오톡 받은 파일\MES_CO~1\MES\obj\Debug\MES.UcBottomButton.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\MES.exe.config
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\MES.exe
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\MES.pdb
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\EntityFramework.dll
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\MetroFramework.dll
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\EntityFramework.xml
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\301-05\Desktop\MES_8.8\MES\bin\Debug\ko\EntityFramework.resources.dll
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.UcBottomButton.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.Detailperform.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.MakeButtonForm.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.exe
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.pdb
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.Form1.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.LoginForm.resources
+C:\Users\301-05\Desktop\MES_8.8\MES\obj\Debug\MES.LoginControl.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\MES.exe.config
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\MES.exe
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\MES.pdb
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\EntityFramework.dll
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\MetroFramework.dll
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\EntityFramework.xml
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\bin\Debug\ko\EntityFramework.resources.dll
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.Form1.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.LoginForm.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.LoginControl.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.UcBottomButton.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.Detailperform.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.MakeButtonForm.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.exe
+C:\Users\301-02\Desktop\MES_8.27 작업자이름\MES\obj\Debug\MES.pdb
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\MES.exe.config
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\MES.exe
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\MES.pdb
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\EntityFramework.dll
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\MetroFramework.dll
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\EntityFramework.xml
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\301-02\Desktop\MES\MES\bin\Debug\ko\EntityFramework.resources.dll
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.Form1.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.LoginForm.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.LoginControl.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.UcBottomButton.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.Detailperform.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.MakeButtonForm.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.exe
+C:\Users\301-02\Desktop\MES\MES\obj\Debug\MES.pdb
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\MES.exe.config
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\MES.exe
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\MES.pdb
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\EntityFramework.dll
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\MetroFramework.Design.dll
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\MetroFramework.dll
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\EntityFramework.xml
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\bin\Debug\ko\EntityFramework.resources.dll
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.Form1.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.LoginForm.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.LoginControl.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.UcBottomButton.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.Detailperform.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.MainForm.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.MakeButtonForm.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.Notice.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.PlanPerform.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.PoolPerform.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.ProductPerformance.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.SelfInspection.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.WorkSelect.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.WorkStatus.resources
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.csproj.CopyComplete
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.exe
+C:\Users\301-05\Documents\MEs\MES_8.27 오후6시 최종\MES\obj\Debug\MES.pdb

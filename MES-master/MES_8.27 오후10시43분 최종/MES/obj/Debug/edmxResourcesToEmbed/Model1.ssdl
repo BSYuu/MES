@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="투입현황1">
+    <Key>
+      <PropertyRef Name="관리번호" />
+    </Key>
+    <Property Name="관리번호" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="품목번호" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="자재불출" Type="bit" Nullable="false" />
+    <Property Name="투입수량" Type="int" Nullable="false" />
+    <Property Name="투입일" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ERPModelStoreContainer">
+    <EntitySet Name="투입현황1" EntityType="Self.투입현황1" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

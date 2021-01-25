@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERPModelStoreContainer" CdmEntityContainer="ERPEntities1">
+    <EntitySetMapping Name="검사유형">
+      <EntityTypeMapping TypeName="ERPModel.검사유형">
+        <MappingFragment StoreEntitySet="검사유형">
+          <ScalarProperty Name="검사유현번호" ColumnName="검사유현번호" />
+          <ScalarProperty Name="검사명" ColumnName="검사명" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="공급업체">
+      <EntityTypeMapping TypeName="ERPModel.공급업체">
+        <MappingFragment StoreEntitySet="공급업체">
+          <ScalarProperty Name="공급업체번호" ColumnName="공급업체번호" />
+          <ScalarProperty Name="공급업체명" ColumnName="공급업체명" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="공정">
+      <EntityTypeMapping TypeName="ERPModel.공정">
+        <MappingFragment StoreEntitySet="공정">
+          <ScalarProperty Name="공정번호" ColumnName="공정번호" />
+          <ScalarProperty Name="공정명" ColumnName="공정명" />
+          <ScalarProperty Name="공정시간" ColumnName="공정시간" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="공정순서">
+      <EntityTypeMapping TypeName="ERPModel.공정순서">
+        <MappingFragment StoreEntitySet="공정순서">
+          <ScalarProperty Name="공정번호" ColumnName="공정번호" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="후공정번호" ColumnName="후공정번호" />
+          <ScalarProperty Name="최초공정번호" ColumnName="최초공정번호" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="반품처리서">
+      <EntityTypeMapping TypeName="ERPModel.반품처리서">
+        <MappingFragment StoreEntitySet="반품처리서">
+          <ScalarProperty Name="반품처리서번호" ColumnName="반품처리서번호" />
+          <ScalarProperty Name="공급업체번호" ColumnName="공급업체번호" />
+          <ScalarProperty Name="입고검사서번호" ColumnName="입고검사서번호" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="발주리스트">
+      <EntityTypeMapping TypeName="ERPModel.발주리스트">
+        <MappingFragment StoreEntitySet="발주리스트">
+          <ScalarProperty Name="자재번호" ColumnName="자재번호" />
+          <ScalarProperty Name="발주번호" ColumnName="발주번호" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="발주서">
+      <EntityTypeMapping TypeName="ERPModel.발주서">
+        <MappingFragment StoreEntitySet="발주서">
+          <ScalarProperty Name="발주번호" ColumnName="발주번호" />
+          <ScalarProperty Name="공급업체번호" ColumnName="공급업체번호" />
+          <ScalarProperty Name="주문날짜" ColumnName="주문날짜" />
+          <ScalarProperty Name="납기일" ColumnName="납기일" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="발주확인리스트">
+      <EntityTypeMapping TypeName="ERPModel.발주확인리스트">
+        <MappingFragment StoreEntitySet="발주확인리스트">
+          <ScalarProperty Name="발주확인서번호" ColumnName="발주확인서번호" />
+          <ScalarProperty Name="자재번호" ColumnName="자재번호" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="발주확인서">
+      <EntityTypeMapping TypeName="ERPModel.발주확인서">
+        <MappingFragment StoreEntitySet="발주확인서">
+          <ScalarProperty Name="발주확인서번호" ColumnName="발주확인서번호" />
+          <ScalarProperty Name="공급업체번호" ColumnName="공급업체번호" />
+          <ScalarProperty Name="배송날짜" ColumnName="배송날짜" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="불량상세정보">
+      <EntityTypeMapping TypeName="ERPModel.불량상세정보">
+        <MappingFragment StoreEntitySet="불량상세정보">
+          <ScalarProperty Name="불량코드번호" ColumnName="불량코드번호" />
+          <ScalarProperty Name="검사번호" ColumnName="검사번호" />
+          <ScalarProperty Name="불량수량" ColumnName="불량수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="불량코드내역">
+      <EntityTypeMapping TypeName="ERPModel.불량코드내역">
+        <MappingFragment StoreEntitySet="불량코드내역">
+          <ScalarProperty Name="불량코드번호" ColumnName="불량코드번호" />
+          <ScalarProperty Name="불량명" ColumnName="불량명" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="생산검사">
+      <EntityTypeMapping TypeName="ERPModel.생산검사">
+        <MappingFragment StoreEntitySet="생산검사">
+          <ScalarProperty Name="생산검사번호" ColumnName="생산검사번호" />
+          <ScalarProperty Name="생산실적번호" ColumnName="생산실적번호" />
+          <ScalarProperty Name="검사유형번호" ColumnName="검사유형번호" />
+          <ScalarProperty Name="양품수량" ColumnName="양품수량" />
+          <ScalarProperty Name="불량수량" ColumnName="불량수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="생산계획현황">
+      <EntityTypeMapping TypeName="ERPModel.생산계획현황">
+        <MappingFragment StoreEntitySet="생산계획현황">
+          <ScalarProperty Name="생산계획현황번호" ColumnName="생산계획현황번호" />
+          <ScalarProperty Name="작업예정일" ColumnName="작업예정일" />
+          <ScalarProperty Name="작업확정일" ColumnName="작업확정일" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="생산실적현황">
+      <EntityTypeMapping TypeName="ERPModel.생산실적현황">
+        <MappingFragment StoreEntitySet="생산실적현황">
+          <ScalarProperty Name="생산실적번호" ColumnName="생산실적번호" />
+          <ScalarProperty Name="작업지시번호" ColumnName="작업지시번호" />
+          <ScalarProperty Name="실적일" ColumnName="실적일" />
+          <ScalarProperty Name="실적수량" ColumnName="실적수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="입고검사">
+      <EntityTypeMapping TypeName="ERPModel.입고검사">
+        <MappingFragment StoreEntitySet="입고검사">
+          <ScalarProperty Name="입고검사번호" ColumnName="입고검사번호" />
+          <ScalarProperty Name="발주확인서번호" ColumnName="발주확인서번호" />
+          <ScalarProperty Name="자재번호" ColumnName="자재번호" />
+          <ScalarProperty Name="양품수량" ColumnName="양품수량" />
+          <ScalarProperty Name="불량수량" ColumnName="불량수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="자재">
+      <EntityTypeMapping TypeName="ERPModel.자재">
+        <MappingFragment StoreEntitySet="자재">
+          <ScalarProperty Name="자재번호" ColumnName="자재번호" />
+          <ScalarProperty Name="자재명" ColumnName="자재명" />
+          <ScalarProperty Name="안전재교량" ColumnName="안전재교량" />
+          <ScalarProperty Name="재고량" ColumnName="재고량" />
+          <ScalarProperty Name="구매단가" ColumnName="구매단가" />
+          <ScalarProperty Name="리드타임" ColumnName="리드타임" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="자재명세서">
+      <EntityTypeMapping TypeName="ERPModel.자재명세서">
+        <MappingFragment StoreEntitySet="자재명세서">
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="자재번호" ColumnName="자재번호" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="자재전표">
+      <EntityTypeMapping TypeName="ERPModel.자재전표">
+        <MappingFragment StoreEntitySet="자재전표">
+          <ScalarProperty Name="자재전표번호" ColumnName="자재전표번호" />
+          <ScalarProperty Name="발주확인서번호" ColumnName="발주확인서번호" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="작업완료지시">
+      <EntityTypeMapping TypeName="ERPModel.작업완료지시">
+        <MappingFragment StoreEntitySet="작업완료지시">
+          <ScalarProperty Name="작업완료지시번호" ColumnName="작업완료지시번호" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="작업완료일" ColumnName="작업완료일" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+          <ScalarProperty Name="생산실적검사여부" ColumnName="생산실적검사여부" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="작업완료확인서">
+      <EntityTypeMapping TypeName="ERPModel.작업완료확인서">
+        <MappingFragment StoreEntitySet="작업완료확인서">
+          <ScalarProperty Name="작업완료지시번호" ColumnName="작업완료지시번호" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="작업완료일" ColumnName="작업완료일" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+          <ScalarProperty Name="생산실적검사여부" ColumnName="생산실적검사여부" />
+          <ScalarProperty Name="입고여부" ColumnName="입고여부" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="작업지시">
+      <EntityTypeMapping TypeName="ERPModel.작업지시">
+        <MappingFragment StoreEntitySet="작업지시">
+          <ScalarProperty Name="작업지시번호" ColumnName="작업지시번호" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+          <ScalarProperty Name="작업지시일" ColumnName="작업지시일" />
+          <ScalarProperty Name="작업완료일" ColumnName="작업완료일" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="작업지시리스트">
+      <EntityTypeMapping TypeName="ERPModel.작업지시리스트">
+        <MappingFragment StoreEntitySet="작업지시리스트">
+          <ScalarProperty Name="작업지시번호" ColumnName="작업지시번호" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="작업지시현황">
+      <EntityTypeMapping TypeName="ERPModel.작업지시현황">
+        <MappingFragment StoreEntitySet="작업지시현황">
+          <ScalarProperty Name="작업지시번호" ColumnName="작업지시번호" />
+          <ScalarProperty Name="생산계획현황번호" ColumnName="생산계획현황번호" />
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="수량" ColumnName="수량" />
+          <ScalarProperty Name="작업장번호" ColumnName="작업장번호" />
+          <ScalarProperty Name="작업상태번호" ColumnName="작업상태번호" />
+          <ScalarProperty Name="작업지시일" ColumnName="작업지시일" />
+          <ScalarProperty Name="작업완료_예정_일" ColumnName="작업완료(예정)일" />
+          <ScalarProperty Name="자재명세번호" ColumnName="자재명세번호" />
+          <ScalarProperty Name="상태" ColumnName="상태" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="제품">
+      <EntityTypeMapping TypeName="ERPModel.제품">
+        <MappingFragment StoreEntitySet="제품">
+          <ScalarProperty Name="제품번호" ColumnName="제품번호" />
+          <ScalarProperty Name="제품명" ColumnName="제품명" />
+          <ScalarProperty Name="안전재고량" ColumnName="안전재고량" />
+          <ScalarProperty Name="재고량" ColumnName="재고량" />
+          <ScalarProperty Name="품목군" ColumnName="품목군" />
+          <ScalarProperty Name="검사여부" ColumnName="검사여부" />
+          <ScalarProperty Name="일별생산량" ColumnName="일별생산량" />
+          <ScalarProperty Name="표준원가" ColumnName="표준원가" />
+          <ScalarProperty Name="실제원가" ColumnName="실제원가" />
+          <ScalarProperty Name="외경" ColumnName="외경" />
+          <ScalarProperty Name="층" ColumnName="층" />
+          <ScalarProperty Name="리드타임" ColumnName="리드타임" />
+          <ScalarProperty Name="LOT수량" ColumnName="LOT수량" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="투입현황1">
+      <EntityTypeMapping TypeName="ERPModel.투입현황1">
+        <MappingFragment StoreEntitySet="투입현황1">
+          <ScalarProperty Name="관리번호" ColumnName="관리번호" />
+          <ScalarProperty Name="품목번호" ColumnName="품목번호" />
+          <ScalarProperty Name="자재불출" ColumnName="자재불출" />
+          <ScalarProperty Name="투입수량" ColumnName="투입수량" />
+          <ScalarProperty Name="투입일" ColumnName="투입일" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="품목정보">
+      <EntityTypeMapping TypeName="ERPModel.품목정보">
+        <MappingFragment StoreEntitySet="품목정보">
+          <ScalarProperty Name="품목번호" ColumnName="품목번호" />
+          <ScalarProperty Name="전공정" ColumnName="전공정" />
+          <ScalarProperty Name="후공정" ColumnName="후공정" />
+          <ScalarProperty Name="외경" ColumnName="외경" />
+          <ScalarProperty Name="색상" ColumnName="색상" />
+          <ScalarProperty Name="층" ColumnName="층" />
+          <ScalarProperty Name="최종공정" ColumnName="최종공정" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

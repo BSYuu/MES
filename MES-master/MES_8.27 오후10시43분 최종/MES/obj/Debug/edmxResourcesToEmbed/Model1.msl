@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERPModelStoreContainer" CdmEntityContainer="ERPEntities">
+    <EntitySetMapping Name="투입현황1">
+      <EntityTypeMapping TypeName="ERPModel.투입현황1">
+        <MappingFragment StoreEntitySet="투입현황1">
+          <ScalarProperty Name="관리번호" ColumnName="관리번호" />
+          <ScalarProperty Name="품목번호" ColumnName="품목번호" />
+          <ScalarProperty Name="자재불출" ColumnName="자재불출" />
+          <ScalarProperty Name="투입수량" ColumnName="투입수량" />
+          <ScalarProperty Name="투입일" ColumnName="투입일" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
